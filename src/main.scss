@@ -1,0 +1,315 @@
+/* abhaya-libre-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/abhaya-libre-v17-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* abhaya-libre-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/abhaya-libre-v17-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    color: red;
+}
+
+body {
+    font-family: 'Abhaya Libre';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+
+// header
+
+.header__list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.header {
+
+    background-color: #0e2149;
+}
+
+.header__container {
+    padding-top: 20px;
+    padding-bottom: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__form {
+    background-color: #253b6a;
+    width: 348px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 10px 17px 15px;
+}
+
+.header__srch {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+
+    &::placeholder {
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 400;
+        opacity: 0.8;
+        line-height: 15px;
+        letter-spacing: 0%;
+    }
+}
+
+.header__btn {
+    background-color: transparent;
+    width: 17px;
+    height: 17px;
+}
+
+// hero
+.hero {
+    position: relative;
+}
+
+.hero__container {
+    padding-bottom: 90px;
+}
+
+.hero__img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero__title {
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 61px;
+    padding-top: 113px;
+    margin-bottom: 32px;
+}
+
+.hero__text {
+    color: #ffffff;
+    font-family: Times New Roman;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    width: 380px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.hero__btn {
+    background-color: #0e2149;
+    font-family: 'Abhaya Libre';
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 12px 48px;
+}
+
+// cards
+.cards__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cards__item {
+    width: 380px;
+    margin-bottom: 80px;
+
+}
+
+.cards__img {
+    width: 380px;
+    position: absolute;
+    z-index: -1;
+}
+
+.cards__title {
+    position: relative;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0%;
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.cards__text {
+    color: #ffffff;
+    font-family: Times New Roman;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 120%;
+    opacity: 0.8;
+    width: 150px;
+    margin-left: 20px;
+
+}
+
+.cards__img1 {
+    height: 200px;
+
+}
+
+// meats
+.meats__container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.meats__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.meats__item {
+    width: 250px;
+}
+
+.meats__title {
+    color: #0e2149;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 15px;
+}
+
+.meats__text {
+    color: #111111;
+    opacity: 0.8;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 130%;
+    width: 245px;
+    margin-bottom: 15px;
+}
+
+.meats__box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.meats__cost1 {
+    color: #0e2149;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.meats__cost2 {
+    color: #d5af86;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration-line: line-through;
+}
+
+.meats__btn {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.meats__btn1 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 12px 26px;
+    background-color: #0e2149;
+}
+
+.meats__btn2 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 12px 20px;
+    background-color: #d5af86;
+}
+
+.meat__button {
+    color: #111111;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    padding: 13px 28px;
+    background-color: #eff2f4;
+
+    &::focus {
+        background-color: #ffffff;
+    }
+}
+
+.meat__buttons {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
